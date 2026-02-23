@@ -11,9 +11,9 @@
 
 features include sepal length, width, petal length, width.
 
-```
+```python
 from sklearn import datasets
-iris = darasets.load_iris()
+iris = datasets.load_iris()
 iris.data() gives the complete dataset
 iris.DESCR gives the description  
 ```
@@ -21,7 +21,6 @@ iris.DESCR gives the description
 - K random centroids selection randomly 
 - assign data samples to nearest centroids 
 - update centroids based on the added data samples 
-
 So now that we have to select centroids randomly
 
 ![[Pasted image 20260219132106.png]]So basically to measure how good the clusters one calculates inertia- it tells how close the members of the clusters are with the centroid. Lower the inertia the better the cluster.
