@@ -6,4 +6,4 @@ It uses a population of possible solutions in this case it would be the possible
 3. Then we crossover two parents and create a new generation by random methods of crossover. Repeat the process of natural selection.
 4. Then we do a step known as elitism. Where the n number of solution of one generation is simply carried to the next generation.
 5. then we do mutation, just randomly change a bit of the genome of a given generation.
-6. 
+This algorithm 
