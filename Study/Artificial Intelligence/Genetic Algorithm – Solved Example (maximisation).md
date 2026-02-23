@@ -4,7 +4,7 @@
 > **f(x) = x²**
 > where **0 ≤ x ≤ 31**
 ---
-## 🎯 Objective
+##  Objective
 
 Goal: Find the value of x (between 0 and 31) that gives the maximum value of f(x) = x² using a Genetic Algorithm.
 
@@ -16,7 +16,7 @@ Since:
 Genetic Algorithm will **evolve toward this value step by step**.
 
 ---
-## 🧩 Step 1: Encoding (Representation)
+##  Step 1: Encoding (Representation)
 
 Encoding Method: Binary Encoding
 
@@ -34,7 +34,7 @@ Each **5-bit string = one chromosome (solution)**
 
 ---
 
-## 👥 Step 2: Initial Population
+##  Step 2: Initial Population
 
 Population size = 4 (random selection)
 
@@ -51,7 +51,7 @@ Randomly chosen values:
 |            |     | Max =                      | 625             |
 
 ---
-## 📊 Step 3: Selection Probability
+## Step 3: Selection Probability
 
 Formula:
 $$Probability = \frac{f(x)}{\text{Total fitness}}$$
@@ -66,7 +66,7 @@ $$Probability = \frac{f(x)}{\text{Total fitness}}$$
 Higher fitness → Higher chance of selection
 
 ---
-## 🔢 Step 4: Expected Count
+##  Step 4: Expected Count
 
 Formula:
 
@@ -82,7 +82,7 @@ $$
 | C4 | 1.25 | 1 |
 
 ---
-## 🧬 Step 5: Mating Pool
+##  Step 5: Mating Pool
 
 Selected based on actual count
 
@@ -92,7 +92,7 @@ Mating pool (4 chromosomes):
 - C4 → once
 - C3 → eliminated
 ---
-## 🔀 Step 6: Crossover
+##  Step 6: Crossover
 
 Random crossover points selected.
 ### Example Results (After Crossover)
@@ -116,7 +116,7 @@ Random crossover points selected.
 
 Crossover improved solution
 ---
-## 🧪 Step 7: Mutation
+##  Step 7: Mutation
 
 Purpose:
 
@@ -136,7 +136,7 @@ After mutation:
 
 Mutation further improved solution
 ---
-## 🔁 Step 8: Repeat Process
+##  Step 8: Repeat Process
 
 Cycle:
 1. Selection
@@ -169,7 +169,7 @@ Genetic Algorithm gradually **moves toward the optimal solution**.
 - Mutation → Random variation
 - Iteration → Evolution over generations
 ---
-## 🌱 Intuition
+##  Intuition
 
 > Start with random guesses.
 > Keep the good ones.
