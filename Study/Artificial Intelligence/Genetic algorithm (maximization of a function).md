@@ -16,4 +16,11 @@ Ex: (Select Encoding Technique)
 | maximum       |                             |         | 625                | 0.54                | 54    | 2.16                           | 2                                 |
 
    
-   Select Mating pool where now the population has 01100 1 time,11001 2 times, 1001
+   Select Mating pool where now the population has 01100 1 time,11001 2 times, 10011 1 time and then cross over is done.
+   Selected based on actual count
+
+Mating pool (4 chromosomes):
+- C1 → once
+- C2 → twice
+- C4 → once
+- C3 → eliminated
