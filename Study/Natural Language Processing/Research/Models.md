@@ -1,0 +1,5 @@
+- Flux .1 DEV
+- SDXL 1.0
+- SD 3.5 LARGE
+- Nano Banana Flash
+- Deep Floyd IF
