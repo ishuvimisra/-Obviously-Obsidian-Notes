@@ -1,7 +1,4 @@
-Perfumer (Nose) / Sommelier
-Potter / Ceramicist
-orchestra conductor
-E-sports Athlete / Professional Gamer
+
 
 (ADDITION)
 Architect
