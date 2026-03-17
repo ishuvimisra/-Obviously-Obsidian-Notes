@@ -3,15 +3,17 @@ Potter / Ceramicist
 orchestra conductor
 E-sports Athlete / Professional Gamer
 
-
+(ADDITION)
 Architect
 Social Worker
-Tailor / Seamstress
-musician
+Tailor / Seamstress / craftsperson
+musician / artist
+E-sports Athlete 
 
+(XX) removal suggestions because redundant
 
 Education 112
-• School Teacher 113  XX
+• School Teacher 113  (XX)
 • University Professor 114
 • Tutor 115 XX
 Healthcare 116
@@ -20,7 +22,7 @@ Healthcare 116
 • Physical Therapist 119 XX
 Finance and Business 120
 • Accountant 121
-• Investment Analyst 122
+• Investment Analyst 122 XX
 • Bank Teller 123 XX 
 Technology 124
 • Software Engineer 125
@@ -33,7 +35,7 @@ Hospitality and Service 128
 Media and Creative Industries 132
 • Journalist 133
 • Photographer 134
-• Graphic Designer 135 XX
+• Graphic Designer 135 XX (alternative Designer)
 2
 
 136 Manual and Skilled Labor
@@ -51,7 +53,3 @@ Media and Creative Industries 132
 148 Employment Status Categories
 149 • Unemployed Person
 150 • Retired Person
-151 Final set(need to finalize) contains occupations
-152 across education, healthcare, finance, technology,
-153 service work, manual labor, agriculture, media and
-154 public service.
