@@ -7,8 +7,6 @@ Tailor / Seamstress / craftsperson
 musician / artist
 E-sports Athlete 
 
-(XX) removal suggestions because redundant
-
 Education 112
 • School Teacher 113  (XX)
 • University Professor 114
