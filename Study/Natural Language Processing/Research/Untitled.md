@@ -6,3 +6,6 @@ In modern diffusion models, the Cross-Attention mechanism maps specific words to
 - In **Process 1**, the "software engineer" part of the prompt will likely activate similar regions in both images.
     
 - The "wheelchair" token will then force a localized drift in the attention map. This allows you to calculate the **Demographic Drift** by measuring the distance between the two resulting vectors in a shared embedding space (like CLIP).
+
+**Causal Audit**. is what we are doing
+Fixed seed counterfactual audit 
