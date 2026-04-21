@@ -39,4 +39,4 @@ $R_2$ looks at the 60 pairs where the identity was "Known" in the neutral set.
     
 - **Flips:** 0
     
-- **Total $R_2$:** $0 / 60 = \mathbf{0.00}$
+- **Total $R_2$:** $0 / 60 = \mathbf{0.00}$ 
