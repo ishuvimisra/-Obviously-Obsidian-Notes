@@ -1,4 +1,5 @@
 experiments:
+
 1. They have compared images from a generic prompt of **disability** ("photo of a person with a disability") against **specific prompts** (mobility impairment, blind, deaf). We have done neutral prompts against disability conditioned prompts unlike them.
 2. they have used clip embedding and cosine similarity between the generic disability image vs specific disability image to see which disability condition is represented or not
 3. aspect framing(poditive vs negative)of mental health conditions in granular levels (bipolar disorder, anxiety, depression) and vision mobility impairment across models and disability types using BLIP VQA and RoBERTA human evaluation
@@ -8,3 +9,5 @@ Findings:
 Both models default to **mobility impairment** (wheelchairs) when the prompt is generic.
 
 Mental disorders are consistently framed more **negatively** than physical disabilities.
+
+Comparison of mitigation techniques of DALLE3 and SDXL led them to find that DALL·E 3 tried to make the images more detailed and professional-looking, it used cliches to achieve that. 
