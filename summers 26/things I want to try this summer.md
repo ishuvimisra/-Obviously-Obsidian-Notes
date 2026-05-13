@@ -6,4 +6,12 @@
 - baked goods
 - evening walks 
 - showers 
+- pancakes 
+- fruit bowls
+- knowing more topics
+- lessen makeup and more personal care using good products
+- clean wardrobe(deep clean)
+- walking on the beach 
+- walking around on streets in the vening(not on busy streets)
+- more park visits
 - 
