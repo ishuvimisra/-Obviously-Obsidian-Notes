@@ -1,0 +1,9 @@
+- gelato (berry flavoured)
+- citrus perfume
+- more drinks 
+- journaling and random drawing
+- a book with annotation
+- baked goods
+- evening walks 
+- showers 
+- 
