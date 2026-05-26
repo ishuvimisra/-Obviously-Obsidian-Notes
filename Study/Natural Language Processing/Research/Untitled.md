@@ -1,4 +1,4 @@
-Its often seen that text to image models aligned via RLHF and prompt fine tuning give very diverse faces and sideline common stereotypes. But it is also observed that standard attribute distribution metrics 
+Its often seen that text to image models aligned via RLHF and prompt fine tuning give very diverse faces and sideline common stereotypes. But it is also observed that standard attribute distribution metrics evaluate mostly surface traits such as gender or race but fail to capture nuances and deeper sociotechnical failures- the contextual erasure of intersectional identities. 
 
 
 
