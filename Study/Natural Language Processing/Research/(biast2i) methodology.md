@@ -27,11 +27,11 @@ We carefully and deliberately selected three models representing distinct eras a
 
 Images were generated via automated APIs: **fal.ai** endpoints for FLUX.1 Dev and SD 3.5 Large, and the native **Gemini API** for Gemini 3.1 Flash. For each prompt-temperature combination, latent seeds were held **fixed** across the neutral and all four disability-conditioned variants within each profession-age cell, enabling causal attribution of any output divergence to the disability condition text.
 
-Five temperature variants (T ∈ {0.0, 0.2, 0.4, 0.6, 0.8}) were generated per prompt, yielding up to 385 images per condition across the full grid. This multi-temperature generation characterizes generation variance as a meaningful signal of model uncertainty in representing a given identity configuration.
+Five temperature variants (T ∈ {0.0, 0.2, 0.4, 0.6, 0.8}) were generated per prompt in the case of gemini, yielding up to 385 images per condition across the full grid. This multi-temperature generation characterizes generation variance as a meaningful signal of model uncertainty in representing a given identity configuration.
 
 ### 3.4 VLM Attribute Extraction Pipeline
 
-We deployed **GPT-4o-mini Vision** in a structured extraction configuration to produce a **9-dimensional attribute profile** for each generated image. The extraction schema uses a fixed categorical codebook with structured JSON output enforced via the OpenAI Batch API with `response_format: json_schema` and `strict: true`. This prevents free-form hallucination and ensures categorical consistency across the full corpus.
+We deployed **GPT-5-mini in a structured extraction configuration to produce a **9-dimensional attribute profile** for each generated image. The extraction schema uses a fixed categorical codebook with structured JSON output enforced via the OpenAI Batch API with `response_format: json_schema` and `strict: true`. This prevents free-form hallucination and ensures categorical consistency across the full corpus.
 
 |Dimension|Category|
 |---|---|
