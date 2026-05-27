@@ -13,19 +13,19 @@ Each profession is crossed with 3 age bins: Young Adult (18–25), Adult (26–4
 - Mental Health Condition (e.g., "adult (26-40), software engineer, mental health condition"_)
 
 This yields a theoretical maximum of 385 images per condition per model (5 temperature variants × 77 profession-age cells for FLUX/SD; 5 temperature variants × 77 cells for Gemini). 
-
+prompts are designed such that the neutral terms remain the same throughout only the particular disability conditioned term is introduced somewhere between them.
 
 ### 3.2 Model Selection
 
-We deliberately selected three models representing distinct eras and philosophies of AI development, evaluated under zero-shot settings with no task-specific fine-tuning:
+We carefully and deliberately selected three models representing distinct eras and of AI development, evaluated under zero-shot settings with no task-specific fine-tuning:
 
-1. **Stable Diffusion 3.5 Large** — an open-weight diffusion model with limited alignment fine-tuning, representing the baseline case of unmediated stereotype encoding.
-2. **FLUX.1 Dev** — a state-of-the-art open-weight model with modern diversity compliance alignment, representing contemporary alignment philosophy.
-3. **Gemini 3.1 Flash** — a closed-source commercial API with aggressive RLHF safety guardrails, representing the policy-constrained commercial ecosystem.
+1. **Stable Diffusion 3.5 Large** : an open-weight diffusion model with limited alignment fine-tuning, representing the baseline case of unmediated stereotype encoding.
+2. **FLUX.1 Dev** : a state-of-the-art open-weight model with modern diversity compliance alignment, representing contemporary alignment philosophy.
+3. **Gemini 3.1 Flash** : a closed-source commercial API with aggressive RLHF safety guardrails, representing the policy-constrained commercial ecosystem.
 
 ### 3.3 Image Generation Pipeline
 
-Images were generated via automated APIs: **fal.ai** endpoints for FLUX.1 Dev (model string: `fal-ai/flux/dev`) and SD 3.5 Large (`fal-ai/stable-diffusion-v35-large`), and the native **Gemini API** for Gemini 3.1 Flash (`gemini-3.1-flash-image-preview`). For each prompt-temperature combination, latent seeds were held **fixed** across the neutral and all four disability-conditioned variants within each profession-age cell, enabling causal attribution of any output divergence to the disability condition text.
+Images were generated via automated APIs: **fal.ai** endpoints for FLUX.1 Dev and SD 3.5 Large, and the native **Gemini API** for Gemini 3.1 Flash. For each prompt-temperature combination, latent seeds were held **fixed** across the neutral and all four disability-conditioned variants within each profession-age cell, enabling causal attribution of any output divergence to the disability condition text.
 
 Five temperature variants (T ∈ {0.0, 0.2, 0.4, 0.6, 0.8}) were generated per prompt, yielding up to 385 images per condition across the full grid. This multi-temperature generation characterizes generation variance as a meaningful signal of model uncertainty in representing a given identity configuration.
 
