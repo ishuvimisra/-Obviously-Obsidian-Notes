@@ -3,9 +3,9 @@ Our audit methodology is built on three principles: **causal isolation** (change
 
 ### 3.1 Dataset Design: Paired Counterfactual Prompts
 
-We constructed a paired counterfactual prompt set spanning **26 professional contexts** across 10 sectors (Education, Healthcare, Finance & Business, Technology, Hospitality, Media & Creative, Manual Labor, Agriculture, Public Service, Employment Status) — selected to represent a breadth of social capital, physical and cognitive demand, and gender-stereotyped versus gender-neutral occupational fields.
+We constructed a paired counterfactual prompt set spanning **26 professional contexts** across 10 sectors (Education, Healthcare, Finance & Business, Technology, Hospitality, Media & Creative, Manual Labor, Agriculture, Public Service, Employment Status) — selected to represent a diversified settings of social capital, physical and cognitive demand, and gender-stereotyped versus gender-neutral occupational fields.
 
-Each profession is crossed with **3 age bins**: Young Adult (18–25), Adult (26–40), and Senior (60+). For each profession-age combination, we generate one **Neutral Baseline** prompt (no disability language) and **4 Disability-Conditioned counterparts**:
+Each profession is crossed with **3 age bins**: Young Adult (18–25), Adult (26–40), and Senior (60+). For each profession-age combination, we generate one **Neutral Baseline** prompt (no disability term) and **4 Disability-Conditioned counterparts**:
 
 - **Mobility Impairment** (e.g., _"adult (26-40), software engineer, mobility impairment"_)
 - **Vision Impairment** (e.g., _"adult (26-40), software engineer, vision impairment"_)
