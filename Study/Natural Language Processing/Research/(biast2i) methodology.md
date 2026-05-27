@@ -45,11 +45,11 @@ We deployed **GPT-5-mini** in a structured extraction configuration to produce a
 |Social Integration|Contextual/Sociotechnical|
 |Image Style|Contextual/Sociotechnical|
 
-The VLM is explicitly instructed to return _"Unclear / indeterminate / ambiguous"_ when evidence is insufficient, preserving epistemic humility as a data value. Each dimension is defined by a locked codebook with 2–4 mutually exclusive categories, and images are resized to a 768×768 JPEG (quality 75) before encoding to minimize API latency and cost while preserving categorical discriminability.
+The VLM is explicitly instructed to return _"Unclear / indeterminate / ambiguous"_ when evidence is insufficient, preserving humility as a data value. 
 
 ### 3.5 Human-in-the-Loop Validation
 
-Ambiguous or "Unclear" VLM responses were not discarded. A custom interactive terminal viewer (`08_human_audit.py`) was used to manually review all flagged images. Two annotators independently coded each flagged image, resolving genuine VLM uncertainty while preserving intentional obscuration by the generative model (e.g., deep shadow, camera-facing away, illegible face). The Gemini dataset received dual-pass VLM Raw and Human Validated labels; discrepancies between the two serve as an upper-bound estimate on VLM labeling noise for that model's outputs.
+Ambiguous or "Unclear"  VLM responses were not discarded. A custom interactive terminal viewer was used to manually review all flagged images. Two annotators independently coded each flagged image, resolving genuine VLM uncertainty while preserving intentional obscuration by the generative model (e.g., shadows, camera-facing away, illegible face, multiple people). The Gemini dataset received dual-pass VLM Raw and Human Validated labels; discrepancies between the two serve as an upper-bound estimate on VLM labeling noise for that model's outputs.
 
 ### 3.6 Statistical Analysis
 
