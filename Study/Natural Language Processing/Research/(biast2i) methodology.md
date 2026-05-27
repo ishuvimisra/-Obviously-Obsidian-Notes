@@ -49,7 +49,7 @@ The VLM is explicitly instructed to return _"Unclear / indeterminate / ambiguous
 
 ### 3.5 Human-in-the-Loop Validation
 
-Ambiguous or "Unclear"  VLM responses were not discarded. A custom interactive terminal viewer was used to manually review all flagged images. Two annotators independently coded each flagged image, resolving genuine VLM uncertainty while preserving intentional obscuration by the generative model (e.g., shadows, camera-facing away, illegible face, multiple people). The Gemini dataset received dual-pass VLM Raw and Human Validated labels; discrepancies between the two serve as an upper-bound estimate on VLM labeling noise for that model's outputs.
+Ambiguous or "Unclear"  VLM responses were not discarded. A custom interactive terminal viewer was used to manually review all flagged images. Two annotators independently coded each flagged image, resolving genuine VLM uncertainty while preserving intentional obscuration by the generative model (e.g., shadows, camera-facing away, illegible face, multiple people). ~~The Gemini dataset received dual-pass VLM Raw and Human Validated labels; discrepancies between the two serve as an upper-bound estimate on VLM labeling noise for that model's outputs.~~
 
 ### 3.6 Statistical Analysis
 
