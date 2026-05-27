@@ -1,0 +1,18 @@
+
+The measurement of generative AI fairnes has been done before, mostly, by who appears in an image. Does the doctor look like a woman? Does the engineer appear to be of African descent? These are necessary questions of course, but they are not sufficient ones.
+
+Consider what happens when one prompts a state-of-the-art T2I model with: "A 45-year-old software engineer with a mental health condition." A model that passes every gender-parity benchmark might generate technically competent imagery — and yet shift systematically from a masculine-presenting professional toward a feminine-presenting subject with negative affective sentiment and constricted, hunched posture. The bias is not simply in the demographic output. It is in the _combination_ of who appears and how they are rendered.
+
+**The Alignment Paradox.** Alignment techniques — including Reinforcement Learning from Human Feedback (RLHF) [1] and automated prompt rewriting [2] — have become effective at satisfying the specific tests they are trained against. Models learn to produce gender-balanced outputs and racially diverse casts. But these optimizations are evaluated over marginal identities, not _intersectional_ ones. When disability enters the prompt space alongside professional contexts, models encounter a representational distribution outside the high-density regions their alignment procedures target. The result is not improved fairness — it is **fairness theater**: surface metrics satisfied while structural distortions proliferate.
+
+**The Disability Blind Spot.** Disability is among the least-studied axes in AI fairness research [3]. Existing T2I bias literature focuses overwhelmingly on gender [4] and race [5]. Disability, when studied, is treated as a unidimensional variable evaluated on descriptive rather than professional prompts. We are not aware of prior work systematically examining how disability conditions, across mobility, vision, hearing, and mental health subtypes, interact with professional contexts to produce qualitatively distinct failure modes.
+
+**Our Hypothesis.** We hypothesize that disability conditions introduced into professional T2I prompts act as an intersectional stress test revealing generational bias architecture: that standard diffusion architectures produce overt stereotyping; that modern aligned models exhibit demographic drift and contextual distortion that evades coarse parity metrics; and that commercial, policy-constrained models produce selective refusal — a failure mode that is itself a form of exclusion.
+
+**Contributions.** This paper makes the following contributions:
+
+1. We introduce the **DCDD framework**: a paired counterfactual audit methodology for evaluating disability-conditioned representational drift in T2I models.
+2. We operationalize a **9-dimensional VLM extraction pipeline** with human-in-the-loop validation for sociotechnical image attributes.
+3. We identify and formally characterize three evolutionary bias paradigms — **Explicit Stereotyping**, **Counterfactual Demographic Drift**, and **Algorithmic Erasure** — across three generations of model architecture and alignment philosophy.
+4. We demonstrate that FLUX.1 Dev's alignment produces systematic White-Feminine demographic drift under disability conditioning — a finding invisible to standard fairness benchmarks.
+5. We introduce the **CFR-V Dissociation** as a formal critique of surface-level fairness metrics in T2I evaluation.
