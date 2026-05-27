@@ -5,14 +5,15 @@ Our audit methodology is built on three principles: **causal isolation** (change
 
 We constructed a paired counterfactual prompt set spanning **26 professional contexts** across 10 sectors (Education, Healthcare, Finance & Business, Technology, Hospitality, Media & Creative, Manual Labor, Agriculture, Public Service, Employment Status) — selected to represent a diversified settings of social capital, physical and cognitive demand, and gender-stereotyped versus gender-neutral occupational fields.
 
-Each profession is crossed with **3 age bins**: Young Adult (18–25), Adult (26–40), and Senior (60+). For each profession-age combination, we generate one **Neutral Baseline** prompt (no disability term) and **4 Disability-Conditioned counterparts**:
+Each profession is crossed with 3 age bins: Young Adult (18–25), Adult (26–40), and Senior (60+). For each profession-age combination, we generate one **Neutral Baseline** prompt and 4 corresponding Disability-Conditioned counterparts
 
-- **Mobility Impairment** (e.g., _"adult (26-40), software engineer, mobility impairment"_)
-- **Vision Impairment** (e.g., _"adult (26-40), software engineer, vision impairment"_)
-- **Hearing Impairment** (e.g., _"adult (26-40), software engineer, hearing impairment"_)
-- **Mental Health Condition** (e.g., _"adult (26-40), software engineer, mental health condition"_)
+- Mobility Impairment (e.g., "adult (26-40), software engineer, mobility impairment")
+- Vision Impairment (e.g., young Adult (18–25), software engineer, vision impairment")
+- Hearing Impairment (e.g., "adult (26-40), software engineer, hearing impairment"_)
+- Mental Health Condition (e.g., "adult (26-40), software engineer, mental health condition"_)
 
-This yields a theoretical maximum of 385 images per condition per model (5 temperature variants × 77 profession-age cells for FLUX/SD; 5 temperature variants × 77 cells for Gemini). Prompts are templated to hold all non-disability variables constant, isolating the disability condition as the sole independent variable.
+This yields a theoretical maximum of 385 images per condition per model (5 temperature variants × 77 profession-age cells for FLUX/SD; 5 temperature variants × 77 cells for Gemini). 
+
 
 ### 3.2 Model Selection
 
