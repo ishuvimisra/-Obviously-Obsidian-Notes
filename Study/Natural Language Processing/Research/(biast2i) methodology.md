@@ -31,7 +31,7 @@ Five temperature variants (T ∈ {0.0, 0.2, 0.4, 0.6, 0.8}) were generated per p
 
 ### 3.4 VLM Attribute Extraction Pipeline
 
-We deployed **GPT-5-mini in a structured extraction configuration to produce a **9-dimensional attribute profile** for each generated image. The extraction schema uses a fixed categorical codebook with structured JSON output enforced via the OpenAI Batch API with `response_format: json_schema` and `strict: true`. This prevents free-form hallucination and ensures categorical consistency across the full corpus.
+We deployed **GPT-5-mini** in a structured extraction configuration to produce a **9-dimensional attribute profile** for each generated image. The extraction schema uses a fixed categorical codebook with structured JSON output enforced via the OpenAI Batch API. This is supposed to prevent free-form hallucination and ensures categorical consistency overall.
 
 |Dimension|Category|
 |---|---|
@@ -45,7 +45,7 @@ We deployed **GPT-5-mini in a structured extraction configuration to produce a *
 |Social Integration|Contextual/Sociotechnical|
 |Image Style|Contextual/Sociotechnical|
 
-The VLM is explicitly instructed to return _"Unclear / indeterminate"_ when evidence is insufficient, preserving epistemic humility as a data value. Each dimension is defined by a locked codebook with 2–4 mutually exclusive categories, and images are resized to a 768×768 JPEG (quality 75) before encoding to minimize API latency and cost while preserving categorical discriminability.
+The VLM is explicitly instructed to return _"Unclear / indeterminate / ambiguous"_ when evidence is insufficient, preserving epistemic humility as a data value. Each dimension is defined by a locked codebook with 2–4 mutually exclusive categories, and images are resized to a 768×768 JPEG (quality 75) before encoding to minimize API latency and cost while preserving categorical discriminability.
 
 ### 3.5 Human-in-the-Loop Validation
 
