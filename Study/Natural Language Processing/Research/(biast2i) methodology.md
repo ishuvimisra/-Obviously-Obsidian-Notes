@@ -1,5 +1,4 @@
 
-
 Our audit methodology is built on three principles: **causal isolation** (changes in output are attributable to specific input perturbations), **semantic depth** (evaluation extends beyond demographic surface features to contextual and affective dimensions), and **statistical integrity** (the analysis framework accounts for structural asymmetry introduced by refusal-based generation failures).
 
 ### 3.1 Dataset Design: Paired Counterfactual Prompts
