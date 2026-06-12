@@ -17,4 +17,4 @@ distortion the CFR-V (Coarse Fairness-Representational Variance)
 Dissociation
 
 
-Text To Image models (T2I) aligned using RLHF (Reinforced Learning from Human Feedback) generate diverse representations of people in marginal contexts. However we have come to realize that the standard parity metrics fail to capture deeper sociotechnical failures, for example the 
+Text To Image models (T2I) aligned using RLHF (Reinforced Learning from Human Feedback) generate diverse representations of people in marginal contexts. However we have come to realize that the standard parity metrics fail to capture deeper sociotechnical failures, for example the distortion of intersectional identities. We hence introduce Disability Conditioned Demographic Drift (DCDD), a paired counterfactual audit framework measuring representational shifts when disability conditions intersect with professional contexts. For this we evaluate three models, Stable Diffusion 3.5 Large, FLUX .1 Dev and Gemini Flash 3.1. The selected models are from different generations to show what are the bias paradigms observed over the time and how they have evolved. 
