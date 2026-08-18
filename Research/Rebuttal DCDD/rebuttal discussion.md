@@ -20,6 +20,13 @@ Remarks for changes before resubmission:
 
 Remarks before submission:
 
-1. 
+ - The authors should either adopt an identity-preserving generation/editing method and quantitatively verify identity similarity, or consistently reframe the study as measuring disability-conditioned output drift under shared noise rather than changes to the “same person.”
+    
+- The revision should separate instability from harm by comparing outputs against an explicit normative or empirical reference distribution. It should acknowledge that movement away from the neutral baseline is not inherently unfair when that baseline is already stereotyped.
+    
+- The refusal experiments should include prompt paraphrases and matched controls involving non-disability medical diagnoses, emotionally sensitive language, and safety-associated terms. Refusal reasons should be categorized where possible, and the “algorithmic erasure” claim should be moderated unless disability-specific causation is established.
+  
+<mark style="background: #FFB8EBA6;">Reviewer 3 </mark>
 
+Expansion of human in loop validation 
 
