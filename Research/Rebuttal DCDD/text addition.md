@@ -1,0 +1,7 @@
+**A. In Section 4.2 (Pairwise Counterfactual Drift), right before or after Table 3**, add 2–4 sentences establishing _why_ this metric is reported, pointing forward to Silent Demographic Drift:
+
+> Pairwise counterfactual drift and distributional representational shift are complementary rather than redundant: the former captures whether an individual generation changes under matched conditions, while the latter captures whether such changes accumulate directionally at the population level. Because a model can exhibit high pairwise instability with directionally inconsistent shifts that cancel at the aggregate level, distributional metrics alone can mask underlying representational instability. We demonstrate this dissociation directly in Section 4.5 (Silent Demographic Drift), where FLUX.1 Dev shows substantial pairwise drift in gender presentation despite weak or inconsistent aggregate shift.
+
+**B. In Section 4.5, in the Silent Demographic Drift paragraph**, add one sentence making the complementarity claim explicit (it's currently implicit):
+
+> This dissociation illustrates why pairwise and distributional metrics are jointly necessary: distributional shift alone would report this model as comparatively stable, while pairwise drift reveals substantial per-instance identity instability invisible to aggregate analysis.
