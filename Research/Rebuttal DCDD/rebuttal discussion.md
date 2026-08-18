@@ -1,3 +1,4 @@
+<mark style="background: #FFB8EBA6;">Reviewer 1</mark>
 The necessity of pairwise counterfactual drift analysis is unclear. The authors pair each neutral-prompt generation with its disability-conditioned counterpart and measure the attribute flip rate to quantify pairwise counterfactual drift. However, if the model yields the same gender proportions with and without the disability condition, one can already conclude that the disability condition does not substantially affect gender. It would be helpful if the paper clarified what additional insight into model bias pairwise counterfactual drift provides beyond what distributional representational shift already captures.
 
 Solution: 
@@ -9,4 +10,16 @@ Solution: Randomness PIpeline
 The authors first obtain attribute labels for the generated images using a VLM and then have two human annotators verify them. However, judgments about affective framing and social agency are likely to be heavily influenced by annotator bias and subjectivity. Involving additional annotators and reporting annotator agreement may improve the reliability of these labels.
 
 Solution: Inter Annotator score and vlm+ human score
+
+Remarks for changes before resubmission:
+1. annotation
+2. seed matching explanation in case of nanobanana
+3. reasoning for counterfactual drift 
+
+<mark style="background: #FFB8EBA6;">Reviewer 2</mark>
+
+Remarks before submission:
+
+1. 
+
 
